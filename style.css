@@ -8,7 +8,7 @@ body {
 
 .container {
     width: 400px;
-    background-color: #fff;
+    background-color: grey;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -33,7 +33,7 @@ input[type="text"] {
 
 button[type="submit"] {
     padding: 5px 10px;
-    background-color: #5aac44;
+    background-color: blue;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -61,7 +61,7 @@ li {
 
 button.complete-btn {
     padding: 2px 5px;
-    background-color: #5aac44;
+    background-color:blue;
     border: none;
     color: #fff;
     cursor: pointer;
