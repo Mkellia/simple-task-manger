@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const newTask = document.createElement('li');
             newTask.innerHTML = `<span class="task-name">${newTaskInput.value.trim()}</span>
             <div class="task-actions">
-                <button class="complete-btn">Completed</button>
-                <button class="delete-btn">Delete</button>
+                <button class="complete-btn">Done</button>
+                <button class="delete-btn">Remove</button>
             </div>`;
             newTask.querySelector('.complete-btn').addEventListener('click', () => {
                 newTask.querySelector('.task-name').classList.toggle('completed');
@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
             newTask.querySelector('.delete-btn').addEventListener('click', () => {
                 newTask.remove();
             });
-            tasksList.appendChild(newTask);
-            newTaskInput.value = '';
+            tasksList.appendChild(newTask); // Add new task to the tasks list
+            newTaskInput.value = ''; // Clear the input field after adding task
         }
     });
 });
+
