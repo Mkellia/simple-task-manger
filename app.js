@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
             newTask.querySelector('.delete-btn').addEventListener('click', () => {
                 newTask.remove();
             });
-            tasksList.appendChild(newTask); // Add new task to the tasks list
-            newTaskInput.value = ''; // Clear the input field after adding task
+            tasksList.appendChild(newTask);
+            newTaskInput.value = '';
         }
     });
 });
-
